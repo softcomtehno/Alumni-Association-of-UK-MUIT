@@ -1,15 +1,5 @@
-import { useState } from "react";
-import { Calendar } from "~app/components/ui/calendar";
+import { Button } from "~app/components/ui/button";
 
 export const HomePage: React.FC = () => {
-  const [date, setDate] = useState<Date | undefined>(new Date());
-
-  return (
-    <Calendar
-      mode="single"
-      selected={date}
-      onSelect={setDate}
-      className="rounded-md border"
-    />
-  );
+  return <Button>Button</Button>;
 };
