@@ -1,5 +1,10 @@
 import { Button } from "~app/components/ui/button";
 
 export const HomePage: React.FC = () => {
-  return <Button>Button</Button>;
+  return (
+    <div>
+      <Button>Button</Button>
+      <h1>Hello world!</h1>
+    </div>
+  );
 };
