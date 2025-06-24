@@ -9,7 +9,7 @@ export default {
       sans: ["Geologica", "sans-serif"],
     },
     colors: {
-      primary: "#0D9488",
+      primary: "#2563EB",
       blue: "#0589c7",
       green: "#72c200",
       sun: "#faa918",
