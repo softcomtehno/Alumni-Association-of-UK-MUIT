@@ -1,0 +1,1 @@
+export { EducationalInstitutions } from "./EducationalInstitutions";

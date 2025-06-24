@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   important: "#root",
   theme: {
     fontFamily: {
-      serif: ["Geologica", "serif"],
-      sans: ["Geologica", "serif"],
+      sans: ["Geologica", "sans-serif"],
     },
     colors: {
       primary: "#0D9488",
