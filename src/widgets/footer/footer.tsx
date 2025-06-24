@@ -78,7 +78,7 @@ export const Footer = () => {
 
   return (
     <Container>
-      <div className="max-w-[360px] mb-10">
+      <div className="max-w-[360px] mt-20 mb-10">
         <Typography variant="h4" className="text-[#2563EB] mb-3">
           Ассоциация выпускников
         </Typography>

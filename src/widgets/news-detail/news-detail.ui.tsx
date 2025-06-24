@@ -25,7 +25,7 @@ export const NewsDetail = () => {
   if (!newsItem) return <div>Новость не найдена</div>;
 
   return (
-    <div className="max-w-[1440px] mx-auto relative">
+    <div className="max-w-[1440px] mx-auto relative mb-20">
       <Link to="/news">
         <Button className="bg-[#2563EB] ml-[30px] absolute">
           <ChevronLeft className="text-white !w-[24px] !h-[24px]" />
