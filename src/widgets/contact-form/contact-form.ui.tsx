@@ -15,7 +15,7 @@ export const ContactFormSection = () => {
 
   return (
     <section className="max-w-[708px] mx-auto">
-      <SectionTitle className="text-center font-bold text-[34px] mb-[24px] mt-[120px] text-[#2563EB]">
+      <SectionTitle className="text-center font-bold text-[34px] mb-[24px] mb-30 text-[#2563EB]">
         Свяжитесь с нами
       </SectionTitle>
       <div className="bg-white  ">

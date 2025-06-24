@@ -7,7 +7,7 @@ export const CommunityCTA = () => {
   const { benefits } = COMMUNITY_CTA_DATA;
 
   return (
-    <section className=" mt-[120px]">
+    <section>
       <div className="max-w-[1440px] rounded-[64px] bg-[#DAE7F3] mx-auto">
         <div className="mx-auto  max-w-[803px] text-center">
           <h2 className="text-4xl text-[#2563EB]  pt-[40px] pb-[16px] font-bold tracking-tight">
@@ -19,12 +19,12 @@ export const CommunityCTA = () => {
             сети контактов <br /> среди выпускников и партнеров
           </p>
         </div>
-        <div className="flex items-center justify-between max-w-[1196px] mx-auto">
+        <div className="flex mb-10 items-center justify-between max-w-[1196px] mx-auto">
           {benefits.map((benefit) => (
             <BenefitCard key={benefit.id} benefit={benefit} />
           ))}
         </div>
-        <div className="my-[40px]  text-center">
+        <div className="text-center">
           <Button className="cursor-pointer w-[464px] mb-[40px] bg-[#2563EB] font-medium text-[20px] h-[49px] rounded-2xl text-white">
             Зарегистрироваться сейчас
           </Button>

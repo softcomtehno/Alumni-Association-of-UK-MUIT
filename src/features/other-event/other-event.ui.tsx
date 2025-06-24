@@ -31,7 +31,7 @@ export const OtherEvent = () => {
 
   if (isLoading) {
     return (
-      <div className="w-full bg-[#DAE7F3] rounded-[80px] mt-[120px] py-12 text-center">
+      <div className="w-full bg-[#DAE7F3] rounded-[80px] mb-30 py-12 text-center">
         Загрузка новостей...
       </div>
     );
@@ -39,14 +39,14 @@ export const OtherEvent = () => {
 
   if (error) {
     return (
-      <div className="w-full bg-[#DAE7F3] rounded-[80px] mt-[120px] py-12 text-center text-red-500">
+      <div className="w-full bg-[#DAE7F3] rounded-[80px] mb-30 py-12 text-center text-red-500">
         {error}
       </div>
     );
   }
 
   return (
-    <div className="w-full bg-[#DAE7F3] rounded-[80px] mt-[120px]">
+    <div className="w-full bg-[#DAE7F3] rounded-[80px] mb-30">
       <div className="max-w-[1440px] mx-auto px-4">
         <div>
           <h3 className="text-[36px] text-[#102552] pt-[40px] pb-[20px] text-center font-bold">
