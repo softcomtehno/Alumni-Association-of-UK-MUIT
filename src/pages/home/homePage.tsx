@@ -1,10 +1,14 @@
-import { Button } from "~app/components/ui/button";
-
+import { Hero } from "~widgets/hero";
+import { LatestNews } from "~features/latest-news";
+import { EducationalInstitutions } from "~features/educational-institutions";
+import { CommunityCTA } from "~features/community-cta";
 export const HomePage: React.FC = () => {
   return (
     <div>
-      <Button>Button</Button>
-      <h1>Hello world!</h1>
+      <Hero />
+      <LatestNews />
+      <EducationalInstitutions />
+      <CommunityCTA />
     </div>
   );
 };
