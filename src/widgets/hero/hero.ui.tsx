@@ -19,10 +19,10 @@ export const Hero = () => {
       <div className="max-w-[1440px] mx-auto">
         <Header />
         <div className="pt-[60px] pb-[80px] px-4">
-          <h1 className="text-[68px] max-w-[990px] leading-18 font-sans font-bold mb-6">
+          <h1 className="text-[68px]  max-[640px]:text-[40px] max-w-[990px] leading-18 max-[640px]:leading-10 max-[430px]:leading-7 max-[430px]:mb-3 max-[430px]:text-[24px] font-sans font-bold  mb-6">
             {content.title}
           </h1>
-          <p className="text-[24px] leading-7 mb-10 max-w-[680px] font-normal font-sans">
+          <p className="text-[24px] leading-7 max-[430px]:leading-5  max-[430px]:text-base mb-10 max-w-[680px] font-normal font-sans">
             {content.description}
           </p>
 

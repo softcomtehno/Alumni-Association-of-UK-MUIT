@@ -15,9 +15,9 @@ export const Header = () => {
   ];
 
   return (
-    <header className="pt-[16px]">
+    <header className="pt-[16px] ">
       <div className="bg-white/80  sticky mx-auto rounded-2xl top-0 z-50">
-        <div className="max-w-[1440px] mx-auto">
+        <div className="max-w-[1440px] mx-auto ">
           <div className="flex justify-between items-center py-2 pl-[24px] pr-[8px]">
             <NavLink
               to="/"
@@ -26,7 +26,7 @@ export const Header = () => {
               Ассоциация выпускников МУИТ
             </NavLink>
 
-            <nav className="hidden md:flex items-center space-x-6">
+            <nav className="max-[840px]:hidden flex items-center space-x-6">
               {navItems.map((item) => (
                 <NavLink
                   key={item.path}
@@ -50,7 +50,7 @@ export const Header = () => {
               </Button>
             </nav>
 
-            <div className="md:hidden">
+            <div className="hidden max-[840px]:block">
               <Button
                 variant="ghost"
                 size="icon"
@@ -62,7 +62,7 @@ export const Header = () => {
           </div>
 
           {mobileMenuOpen && (
-            <div className="md:hidden py-4 border-t">
+            <div className="hidden max-[840px]:block  py-4 border-t">
               <div className="flex flex-col space-y-3 px-4">
                 {navItems.map((item) => (
                   <NavLink
@@ -80,7 +80,11 @@ export const Header = () => {
                     {item.name}
                   </NavLink>
                 ))}
-                <Button asChild variant="outline" className="mt-2">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="mt-2 bg-[#2563EB] rounded-3xl"
+                >
                   <NavLink to="/login" onClick={() => setMobileMenuOpen(false)}>
                     Войти
                   </NavLink>

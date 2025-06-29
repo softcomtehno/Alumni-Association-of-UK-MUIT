@@ -7,6 +7,7 @@ import { EventDetailPageRoute } from "~pages/event-detail";
 import { GraduatesPageRoute } from "~pages/graduates-page";
 import { AboutPageRoute } from "~pages/about-page";
 import { ContactPageRoute } from "~pages/contact-page";
+import { AuthPageRoute } from "~pages/auth-page";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       GraduatesPageRoute,
       AboutPageRoute,
       ContactPageRoute,
+      AuthPageRoute,
     ],
   },
 ]);

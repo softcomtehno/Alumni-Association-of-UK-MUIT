@@ -12,6 +12,9 @@ export const pathKeys = {
   contacts() {
     return pathKeys.root.concat("contacts/");
   },
+  login() {
+    return pathKeys.root.concat("login/");
+  },
   news: {
     root() {
       return pathKeys.root.concat("news/");
