@@ -8,21 +8,21 @@ interface InstitutionCardProps {
 
 export const InstitutionCard = ({ institution }: InstitutionCardProps) => {
   return (
-    <div className="bg-[#DAE7F3] w-[464px] rounded-3xl pt-[20px]">
+    <div className="bg-[#DAE7F3] w-[464px] max-[400px]:max-w-[370px] rounded-3xl pt-[20px]">
       <div>
         <img className="mx-auto" src={institution.icon} alt="" />
         <div>
           <h3
             style={{ color: institution.colorClass }}
-            className="font-bold text-[20px] pt-4 leading-6 text-center mx-auto max-w-[367px]"
+            className="font-bold  text-[20px] pt-4 leading-6 text-center mx-auto max-w-[367px]"
           >
             {institution.name}
           </h3>
           <div className=" border-b border-solid border-[#A4C6E6] pt-10 "></div>
         </div>
-        <div className="flex justify-center gap-3 py-6">
+        <div className="flex max-[400px]:grid  justify-center gap-3 py-6">
           {institution.socialLinks.instagram && (
-            <Button className="text-[#2563EB] bg-white w-[190px] cursor-pointer rounded-2xl h-[50px]">
+            <Button className="text-[#2563EB] bg-white w-[190px] max-[400px]:w-[300px] cursor-pointer rounded-2xl h-[50px]">
               <a
                 href={institution.socialLinks.instagram}
                 target="_blank"
@@ -35,7 +35,7 @@ export const InstitutionCard = ({ institution }: InstitutionCardProps) => {
             </Button>
           )}
           {institution.socialLinks.whatsApp && (
-            <Button className="text-[#2563EB] bg-white w-[190px] cursor-pointer rounded-2xl h-[50px]">
+            <Button className="text-[#2563EB] bg-white w-[190px] max-[400px]:w-[300px] cursor-pointer rounded-2xl h-[50px]">
               <a
                 href={institution.socialLinks.whatsApp}
                 target="_blank"

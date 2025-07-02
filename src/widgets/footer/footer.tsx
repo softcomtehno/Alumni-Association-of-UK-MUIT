@@ -78,7 +78,7 @@ export const Footer = () => {
 
   return (
     <Container>
-      <div className="max-w-[360px] mt-20 mb-10">
+      <div className="max-w-[360px] px-4 mt-20  mb-10">
         <Typography variant="h4" className="text-[#2563EB] mb-3">
           Ассоциация выпускников
         </Typography>
@@ -87,8 +87,8 @@ export const Footer = () => {
           гоуниверситета инновационных технологий
         </p>
       </div>
-      <div className="flex justify-between border-b-1 pb-10 mb-10">
-        <div className="flex gap-16">
+      <div className="flex justify-between  px-4 flex-wrap border-b-1 pb-10 mb-10">
+        <div className="flex flex-wrap gap-16">
           {footerLinks.map((item, index) => (
             <FooterLinks key={index} title={item.title} data={item.data} />
           ))}

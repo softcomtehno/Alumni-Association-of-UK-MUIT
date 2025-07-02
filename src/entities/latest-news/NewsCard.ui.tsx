@@ -9,7 +9,7 @@ export const NewsCard = ({ item }: NewsCardProps) => {
   return (
     <Link
       to={`/news/${item.slug}`}
-      className=" bg-white  w-[464px] cursor-pointer rounded-3xl transition-all duration-300 hover:shadow-xl hover:scale-101"
+      className=" bg-white max-[480px]:max-w-[398px] max-[400px]:max-w-[370px]  w-[464px] cursor-pointer rounded-3xl transition-all duration-300 hover:shadow-xl hover:scale-101"
     >
       <div>
         {item.imageUrl && (
@@ -17,7 +17,7 @@ export const NewsCard = ({ item }: NewsCardProps) => {
             <img
               src={item.imageUrl}
               alt={item.title}
-              className="object-cover transition-transform max-w-[464px]   "
+              className="object-cover transition-transform max-[400px]:max-w-[370px] max-w-[464px] max-[480px]:max-w-[398px]   "
             />
           </div>
         )}

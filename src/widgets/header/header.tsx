@@ -3,6 +3,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { MenuIcon } from "lucide-react";
 import { ShieldCloseIcon } from "lucide-react";
+
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -17,7 +18,7 @@ export const Header = () => {
   return (
     <header className="pt-[16px] ">
       <div className="bg-white/80  sticky mx-auto rounded-2xl top-0 z-50">
-        <div className="max-w-[1440px] mx-auto ">
+        <div className="max- mx-auto ">
           <div className="flex justify-between items-center py-2 pl-[24px] pr-[8px]">
             <NavLink
               to="/"
@@ -50,7 +51,7 @@ export const Header = () => {
               </Button>
             </nav>
 
-            <div className="hidden max-[840px]:block">
+            <div className="hidden text-black max-[840px]:block">
               <Button
                 variant="ghost"
                 size="icon"

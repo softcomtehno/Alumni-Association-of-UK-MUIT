@@ -5,6 +5,7 @@ import { NewsCard } from "~entities/latest-news";
 import { fetchNews } from "~entities/latest-news";
 import { NewsItem } from "~entities/latest-news";
 import { Link } from "react-router-dom";
+import { Container } from "~shared/ui";
 
 export const LatestNews = () => {
   const [newsItems, setNewsItems] = useState<NewsItem[]>([]);
@@ -46,14 +47,14 @@ export const LatestNews = () => {
   }
 
   return (
-    <div className="w-full bg-[#DAE7F3] rounded-[80px] mb-30">
-      <div className="max-w-[1440px] mx-auto px-4">
+    <div className="w-full mt-[120px] max-[640px]:mt-[24px]  max-[640px]:rounded-[50px] bg-[#DAE7F3] rounded-[80px] ">
+      <Container>
         <div>
-          <h3 className="text-[36px] text-[#102552] pt-[40px] pb-[20px] text-center font-bold">
+          <h3 className="text-[36px] max-[510px]:text-[26px] text-[#102552] pt-[40px] pb-[20px] text-center font-bold">
             Последние новости
           </h3>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="flex  justify-center gap-6 flex-wrap">
           {newsItems.map((item) => (
             <NewsCard key={item.id} item={item} />
           ))}
@@ -69,7 +70,7 @@ export const LatestNews = () => {
             </Button>
           </Link>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { Button } from "~app/components/ui/button";
 import { Header } from "~widgets/header";
 import { HERO_CONTENT } from "./model/constants";
+import { Container } from "~shared/ui";
 
 export const Hero = () => {
   const location = useLocation();
@@ -13,10 +14,10 @@ export const Hero = () => {
 
   return (
     <section
-      className="text-white rounded-b-[80px] bg-[linear-gradient(270deg,#43D0C9_37.94%,#2563EB_100%),linear-gradient(270deg,rgba(37,99,235,0)_0%,#2563EB_87.5%)]"
+      className="text-white rounded-b-[80px] max-[640px]:border-b-[50px] bg-[linear-gradient(270deg,#43D0C9_37.94%,#2563EB_100%),linear-gradient(270deg,rgba(37,99,235,0)_0%,#2563EB_87.5%)]"
       style={{ background: content.background }}
     >
-      <div className="max-w-[1440px] mx-auto">
+      <Container>
         <Header />
         <div className="pt-[60px] pb-[80px] px-4">
           <h1 className="text-[68px]  max-[640px]:text-[40px] max-w-[990px] leading-18 max-[640px]:leading-10 max-[430px]:leading-7 max-[430px]:mb-3 max-[430px]:text-[24px] font-sans font-bold  mb-6">
@@ -54,7 +55,7 @@ export const Hero = () => {
             </div>
           )}
         </div>
-      </div>
+      </Container>
     </section>
   );
 };
