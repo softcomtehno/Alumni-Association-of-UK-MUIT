@@ -10,7 +10,7 @@ export const MissionCard = ({
   ...props
 }: MissionCardProps) => (
   <div
-    className={` text-center  w-[464px] h-[220px] py-3 mx-auto bg-white border border-solid border-[#A4C6E6] rounded-3xl ${className}`}
+    className={` text-center  w-[464px] px-1  py-3 mx-auto bg-white border border-solid border-[#A4C6E6] rounded-3xl ${className}`}
     {...props}
   >
     <img src={mission.icon} className="p-3 mx-auto rounded-xl bg-[#2563EB]" />

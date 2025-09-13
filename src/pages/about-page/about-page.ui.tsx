@@ -4,7 +4,7 @@ import { IstoryText } from "~widgets/istory-text";
 import { PhotoGallery } from "~features/PhotoGallery";
 export const AboutPage: React.FC = () => {
   return (
-    <div>
+    <div className="">
       <Hero />
       <MissionSection />
       <IstoryText />

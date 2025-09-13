@@ -19,7 +19,7 @@ export const Hero = () => {
     >
       <Container>
         <Header />
-        <div className="pt-[60px] pb-[80px] px-4">
+        <div className="pt-[60px] pb-[80px] max-[640px]:pt-[24px] max-[640px]:pb-0 px-4">
           <h1 className="text-[68px]  max-[640px]:text-[40px] max-w-[990px] leading-18 max-[640px]:leading-10 max-[430px]:leading-7 max-[430px]:mb-3 max-[430px]:text-[24px] font-sans font-bold  mb-6">
             {content.title}
           </h1>

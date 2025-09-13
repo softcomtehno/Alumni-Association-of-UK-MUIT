@@ -2,8 +2,8 @@ import React from "react";
 
 export const IstoryText = () => {
   return (
-    <div className="max-w-[608px] mx-auto">
-      <h2 className="font-bold text-[30px] mb-[18px] mt-[80px] text-center text-[#102552]">
+    <div className="max-w-[608px] px-4 mx-auto">
+      <h2 className="font-bold text-[30px] max-[500px]:text-[26px] max-[500px]:mt-[40px] max-[500px]:mb-[10px] mb-[18px]   mt-[80px]  text-center text-[#102552]">
         Наша история
       </h2>
       <div className="text-[#102552] mx-auto font-medium text-[18px]">
